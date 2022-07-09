@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b6N-Lg-wTC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maps" translatesAutoresizingMaskIntoConstraints="NO" id="Zuj-Si-MmS">
+                                        <rect key="frame" x="183" y="424" width="48" height="48"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Uk-DZ-LbW">
+                                        <rect key="frame" x="154.5" y="661" width="105" height="35"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <color key="textColor" red="0.46666666670000001" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="1Uk-DZ-LbW" secondAttribute="bottom" constant="200" id="Fnc-ls-2yl"/>
+                                    <constraint firstItem="Zuj-Si-MmS" firstAttribute="centerY" secondItem="b6N-Lg-wTC" secondAttribute="centerY" id="VDH-3Q-Xzh"/>
+                                    <constraint firstItem="1Uk-DZ-LbW" firstAttribute="centerX" secondItem="b6N-Lg-wTC" secondAttribute="centerX" id="nzx-MD-TCD"/>
+                                    <constraint firstItem="Zuj-Si-MmS" firstAttribute="centerX" secondItem="b6N-Lg-wTC" secondAttribute="centerX" id="vsY-MK-3XH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="b6N-Lg-wTC" secondAttribute="bottom" id="GlC-EQ-mfC"/>
+                            <constraint firstItem="b6N-Lg-wTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K0K-4t-0m6"/>
+                            <constraint firstItem="b6N-Lg-wTC" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QAE-Be-3RB"/>
+                            <constraint firstItem="b6N-Lg-wTC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xrj-Pj-CiM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Maps" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

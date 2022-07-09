@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlacesCollectionViewCell" customModule="Maps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NonVeg" translatesAutoresizingMaskIntoConstraints="NO" id="RUi-Pa-EZd">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                    </imageView>
+                    <view opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" alpha="0.45000000000000001" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="PPN-UG-lKc">
+                        <rect key="frame" x="10" y="50" width="80" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-5j-4d2">
+                                <rect key="frame" x="5" y="10" width="70" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uKi-5j-4d2" firstAttribute="top" secondItem="PPN-UG-lKc" secondAttribute="top" constant="10" id="1UQ-oC-eAZ"/>
+                            <constraint firstAttribute="bottom" secondItem="uKi-5j-4d2" secondAttribute="bottom" constant="10" id="XFj-2N-tVE"/>
+                            <constraint firstItem="uKi-5j-4d2" firstAttribute="leading" secondItem="PPN-UG-lKc" secondAttribute="leading" constant="5" id="hPg-i4-RV6"/>
+                            <constraint firstAttribute="trailing" secondItem="uKi-5j-4d2" secondAttribute="trailing" constant="5" id="rvb-aX-xWn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RUi-Pa-EZd" secondAttribute="trailing" constant="10" id="7rs-9N-3rQ"/>
+                <constraint firstItem="RUi-Pa-EZd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Adk-WE-6Pc"/>
+                <constraint firstAttribute="trailing" secondItem="PPN-UG-lKc" secondAttribute="trailing" constant="10" id="EZp-uT-zUQ"/>
+                <constraint firstAttribute="bottom" secondItem="RUi-Pa-EZd" secondAttribute="bottom" constant="10" id="J1I-RB-c48"/>
+                <constraint firstItem="RUi-Pa-EZd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="QIZ-7f-i6x"/>
+                <constraint firstItem="PPN-UG-lKc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="50" id="TPa-ar-OMh"/>
+                <constraint firstItem="PPN-UG-lKc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="cRH-Qe-4Zm"/>
+                <constraint firstAttribute="bottom" secondItem="PPN-UG-lKc" secondAttribute="bottom" constant="10" id="f6W-NC-MZU"/>
+            </constraints>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="blurView" destination="PPN-UG-lKc" id="1ZM-Wt-Jpv"/>
+                <outlet property="placeImageView" destination="RUi-Pa-EZd" id="Y1I-VZ-Dte"/>
+                <outlet property="placeName" destination="uKi-5j-4d2" id="3Re-Gg-p9S"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="68.303571428571431"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="NonVeg" width="500" height="334"/>
+    </resources>
+</document>

@@ -1,0 +1,32 @@
+PODS:
+  - FloatingPanel (2.5.1)
+  - Gemini (1.4.0)
+  - GoogleMaps (6.0.1):
+    - GoogleMaps/Maps (= 6.0.1)
+  - GoogleMaps/Base (6.0.1)
+  - GoogleMaps/Maps (6.0.1):
+    - GoogleMaps/Base
+  - GooglePlaces (6.0.0)
+
+DEPENDENCIES:
+  - FloatingPanel
+  - Gemini
+  - GoogleMaps
+  - GooglePlaces
+
+SPEC REPOS:
+  trunk:
+    - FloatingPanel
+    - Gemini
+    - GoogleMaps
+    - GooglePlaces
+
+SPEC CHECKSUMS:
+  FloatingPanel: 523cb50f490f151fc03fabf24a8322e44d22f65f
+  Gemini: 4ad915cca8805577fe3021e02feeca2b77dcdbfc
+  GoogleMaps: c213fc2334b7374144cede914da779b99be0ab74
+  GooglePlaces: c97d96ae68594acb64035c9ca9f26fbfc1d23af1
+
+PODFILE CHECKSUM: 461ae1d8f076f1c4a5526b70752197cf9db78e8f
+
+COCOAPODS: 1.11.2
